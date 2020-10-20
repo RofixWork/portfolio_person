@@ -1,0 +1,40 @@
+%btnWebsite {
+padding: 10px 32px;
+border: 2px solid $fourColor;
+background: transparent;
+color: $subColor;
+border-radius: 50px;
+font-size: 16px;
+outline: none;
+transition: background-color .3s;
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        background-color: $fourColor;
+        border: 2px solid $fourColor;
+    }
+}
+
+.btnWebsiteOne {
+    @extend %btnWebsite;
+}
+
+.btnWebsiteTwo {
+    @extend %btnWebsite;
+    border: 2px solid $fourColor;
+    &:hover {
+        background-color: $fourColor;
+        border: 2px solid $fourColor;
+    }
+}
+.btnWebsiteThree {
+    @extend %btnWebsite;
+    background-color: $fourColor;
+    border: 2px solid $fourColor;
+
+    &:hover {
+        background-color: $fourColor;
+        border: 2px solid $fourColor;
+    }
+}
